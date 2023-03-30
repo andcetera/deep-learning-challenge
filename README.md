@@ -1,4 +1,5 @@
 # Alphabet Soup Deep Learning Model - Testing and Analysis
+![Neural Network stock photo](Images/neural-network.jpg)
 - - -
 ## Overview of the Analysis
 
@@ -25,6 +26,24 @@ CSV file containing more than 34,000 organizations that have received funding fr
 ### Process
 
 From this labeled dataset, we built a [neural network model](Colab_Notebooks/Alphabet_Soup_Model.ipynb) to predict if historical funding was marked "IS_SUCCESSFUL" or not using `Binary Classification Analysis`, and then set about several attempts at building a [second model](Colab_Notebooks/AlphabetSoupCharity_Optimization.ipynb) to optimize those results with the goal of a 75% accuracy rate, according to the process outlined below:
+
+#### Data Preprocessing:
+
+1. Binning rare occurances of categorical values with more than 10 unique values into an "Other" category for clarity.
+
+2. Encoding all categorical values into 1s and 0s so our model can parse them.
+
+3. Splitting the data into a "features" array `X` and a "target" array `y` and further splitting those into `training` and `testing` datasets.
+    * We determined that the `IS_SUCCESSFUL` column was our target value, and so set this as our `y` array.
+    * We determined that the `EIN` and `NAME` columns were neither targets nor features, and so removed them from the dataset
+    * We determined that the remaining columns were our features, and so set them as our `X` array
+
+4. Scaling the `training` and `testing` features to a standard level so no values are overly favored by the algorithm
+
+#### Model Creation:
+
+1. 
+
 
 ## Results
 
