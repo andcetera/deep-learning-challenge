@@ -69,7 +69,7 @@ From this labeled dataset, we built a [neural network model](Colab_Notebooks/Alp
 
 ### Neural Network 1
 
-* **Description of Model:** We created our initial model with an input layer of 80 nodes and a hidden layer of 30 nodes assigned, loosely shooting for a simpler model with about a double nodes to features ratio after preprocessing as a starting point. We used a `Rectified Linear Unit` activation as none of our values were negative and this is generally a more efficient activation function to start with.  This model was run for a 100 epoch training regimen.  
+* **Description of Model:** We created our initial model with an input layer of 80 nodes and a hidden layer of 30 nodes assigned, loosely shooting for a simpler model with about a double nodes to features ratio after preprocessing as a starting point. We used a `Rectified Linear Unit` activation as none of our values were negative and this is generally a more efficient activation function to start with.  All models' output layer had one unit and used a `Sigmoid` function to condense results into a binary classifaction.  This model was run for a 100 epoch training regimen.  
 
 **Model 1 Summary:**  
 ![Model 1 Summary](Images/model1_summary.png)
@@ -131,7 +131,7 @@ In all our runs, we rarely saw the training accuracy break above 74%, which is w
 
 It could be possible that a different kind of linear supervised machine learning model may be able to solve this classification problem more effectively, possibly a Decision Tree or Random Forest model due to the prevalence of categorical variables involved.  We would recommend further testing to determine if this is a good strategy.
 
-While this model did not meet the requested specifications, it does still provide useful information, as the original dataset gives us a 53.24% chance of determining which funded organizations will be successful, and this model puts us in the range of 72.46% - 72.87%.  It could be a useful tool for prediction, but we wouldn't recommend it being the *only* tool used to make funding decisions in the future.
+While this model did not meet the requested specifications, it does still provide useful information, as the original dataset gives us a 53.24% chance of determining which funded organizations will be successful, and this model puts us in the range of 72.46% - 72.87%.  It could be a useful tool for prediction, but we wouldn't recommend it being the *only* tool used to make funding decisions in the future due to the reasons outlined above.
 
 - - -
 
