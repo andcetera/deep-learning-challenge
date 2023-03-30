@@ -66,11 +66,51 @@ From this labeled dataset, we built a [neural network model](Colab_Notebooks/Alp
 
 ### Neural Network 1
 
-* **Description of Model:**
+* **Description of Model:** We created our initial model with an input layer of 80 nodes and a hidden layer of 30 nodes assigned, loosely shooting for a simpler model with about a double nodes to features ratio after preprocessing as a starting point. This was run for a 100 epoch training regimen.  
+
+Model 1 Summary:  
+![Model 1 Summary](Images/model1_summary.png)
+
+* **Model Performance:**  
+  * **Accuracy:** 72.47%
+  * **Loss:** 0.56
+
+Model 1 Results:  
+![Model 1 Results](Images/model1_results.png)
+
+Model 1 Training History:  
+![Model 1 Training History](Images/model1_train_hist.png)
 
 ### Neural Network 2
 
-* **Description of Model:**
+* **Description of Model:** After several attempts, the best results achieved came from a model with the following characteristics:  
+  * 4 hidden layers
+  * `Rectified Linear Unit` activation function
+  * 60 neurons on the first input layer
+  * Hidden layer neurons as follows:
+    * 40 units
+    * 20 units
+    * 90 units
+    * 30 units
+  * A training regimen of 179 epochs which achieved the best weights with our early stoppping callback activated
+
+Keras Tuner Best Run:  
+![Keras Tuner Best Run](Images/tuner_best.png)  
+![Keras Tuner Best Run Parameters](Images/tuner_best_params.png)
+
+Model 2 Summary:  
+![Model 2 Summary](Images/model2_summary.png)  
+![Model 2 Early Stopping](Images/model2_early_stop.png)
+
+* **Model Performance:**
+    * **Accuracy:** 72.87%
+    * **Loss:** 0.59
+
+Model 2 Results:  
+![Model 2 Results](Images/model2_results.png)
+
+Model 2 Training History:  
+![Model 2 Training History](Images/model2_train_hist.png)
 
 #### Optimization Notes
 
