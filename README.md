@@ -42,7 +42,7 @@ From this labeled dataset, we built a [neural network model](Colab_Notebooks/Alp
 
 #### Model Creation:
 
-1. Creating an initial model with an input layer of 80 nodes and a hidden layer of 30 nodes assigned, loosely shooting for a simpler model with about a double nodes to features ratio after preprocessing as a starting point.
+1. Assigning the number of layers, neurons, and activation functions to the first model.
 
 2. Compiling and training the model.
 
@@ -58,15 +58,19 @@ From this labeled dataset, we built a [neural network model](Colab_Notebooks/Alp
 
 2. Adjusting the input data to improve accuracy and correct for possible underfitting, we modified the binning process to allow for more complexity in the dataset.
 
-3. Importing `keras tuner` and attempting many variations in model depth, number of neurons per layer, alternative activation functions, and number of epochs in the training regimen by using an early stopping callback function.
+3. Importing `keras tuner` and attempting many variations in model depth, number of neurons per layer, alternative activation functions on a test run of 20 epochs.
+
+4. Feeding the results of this test run into a new model, with a varying number of epochs in the training regimen based on whether the training loss continued to improve, using an early-stopping callback function.
 
 ## Results
 
-### Term Descriptions (?)
-
 ### Neural Network 1
 
+* **Description of Model:**
+
 ### Neural Network 2
+
+* **Description of Model:**
 
 #### Optimization Notes
 
