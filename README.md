@@ -42,8 +42,23 @@ From this labeled dataset, we built a [neural network model](Colab_Notebooks/Alp
 
 #### Model Creation:
 
-1. 
+1. Creating an initial model with an input layer of 80 nodes and a hidden layer of 30 nodes assigned, loosely shooting for a simpler model with about a double nodes to features ratio after preprocessing as a starting point.
 
+2. Compiling and training the model.
+
+3. Evaluating the model using the testing data to calculate its loss and accuracy.
+
+4. Plotting the training history loss and accuracy for context.
+
+5. Saving and exporting the model to an `HDF5` file.
+
+#### Model Optimization:
+
+1. Initial attempts were made to simplify the input data & remove potential outliers, but this caused the network to perform more poorly.
+
+2. Adjusting the input data to improve accuracy and correct for possible underfitting, we modified the binning process to allow for more complexity in the dataset.
+
+3. Importing `keras tuner` and attempting many variations in model depth, number of neurons per layer, alternative activation functions, and number of epochs in the training regimen by using an early stopping callback function.
 
 ## Results
 
